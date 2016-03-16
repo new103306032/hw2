@@ -1,0 +1,223 @@
+body{
+  /*background-image: url(http://allpicts.in/download/3092/2015/04/funny_animal_wallpapers_free_download_with_praying_kitten-1920x1080.jpg/);
+ */ background-image: url(../image/cat.jpg);
+  background-size: 100%;
+}
+
+.title{
+  font-size: 200px;
+  font-family: cursive;
+  color: pink; 
+}
+
+.timer-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background-color: #000;
+  color: #fff;
+}
+
+.timer-wrapper > ul {
+  height: 80%;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.timer-wrapper > ul > li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background: transparent;
+  border: 100px solid rgba(250,200,250,0.3);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 500px;
+  transition: all 0.5s ease;
+}
+
+.timer-wrapper > ul > li:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  width: 200px;
+  height: 100px;
+  margin-left: -110px;
+  margin-top: -110px;
+  padding: 150px 50px 60px;
+  background-color: rgba(250,200,250,0.5);
+  border: 10px solid rgba(255,25,255,0.3);
+  border-radius: 200px;
+  text-shadow: 2px 2px 0px rgba(250,10,200,0.1);
+  box-shadow: 0px 0px 30px rgba(250,10,200,0.1);
+  animation: pulseShadow 5s infinite linear;
+}
+
+.timer-wrapper > ul > li:last-child::after {
+  content: '';
+  border: 3px dotted rgba(250,10,200,0.1);
+  border-radius: 190px;
+  width: 310px;
+  height: 325px;
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 30px rgba(250,10,200,0.1);
+}
+
+.timer-wrapper > ul > li:nth-child(4) {
+  margin-left: -170px;
+  margin-top: -170px;
+  z-index: 1;
+  width: 330px;
+  height: 330px;
+  border-width: 60px;
+  border-style: solid;
+  box-shadow: inset 0px 0px 25px rgba(250,10,200,0.1);
+  animation: spinBG3 8s infinite linear;
+}
+
+.timer-wrapper > ul > li:nth-child(3) {
+  margin-left: -150px;
+  margin-top: -150px;
+  z-index: 3;
+  width: 390px;
+  height: 420px;
+  border-width: 2px;
+  box-shadow: inset 0px 0px 25px rgba(255,0,0,0.3);
+  animation: spinBG 12s infinite linear;
+}
+
+.timer-wrapper > ul > li:nth-child(2) {
+  margin-left: -200px;
+  margin-top: -210px;
+  z-index: 3;
+  width: 400px;
+  height: 380px;
+  border-width: 60px;
+  border-style: dotted;
+  box-shadow: 0px 0px 20px rgba(260, 6, 230, .5);
+  animation: spinBG2 1s infinite linear;
+}
+
+.timer-wrapper > ul > li:first-child {
+  margin-left: -250px;
+  margin-top: -250px;
+  z-index: 3;
+  width: 530px;
+  height: 530px;
+  border-width: 30px;
+  animation: spinBG 5s infinite linear;
+}
+
+#num {
+  position: absolute;
+  top: 57%;
+  left: 57%;
+  z-index: 200;
+  margin-left: -9%;
+  margin-top: -7%;
+  font-size: 140px;
+  color: rgba(200,100,200,10);;
+  font-family: cursive;
+}
+
+button{
+    border: 10px solid #000000;
+    padding: 10px 40px; 
+    background: pink;
+    width: 700px;
+    height: 170px;
+    border-radius: 10px;
+	margin-left: auto;
+    margin-right: auto;
+    background-image: url('http://c.xywlz.com/titlepic/BBE4K253000155IV.gif-W336');
+	font-size: 65px;
+    font-family: cursive;
+    color : white;
+	transition: width 0.5s;
+}	
+button:hover{
+	width: 800px;
+}
+
+/*-------------------------------------------
+		 Animations
+		-------------------------------------------*/
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 35);
+  }
+  50% {
+    text-shadow: 0px 0px 40px rgba(255, 6, 1, 0.5);
+  }
+  100% {
+    text-shadow: 0px 0px 20px rgba(255, 6, 1, 75);
+  }
+}
+
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0px 0px 30px rgba(255,200,255,0.3);
+    background-color: rgba(250,200,250,0.5);
+  }
+  25% {
+    box-shadow: 0px 0px 30px rgba(192,192,192,0.3);
+    background-color: rgba(250,150,250,0.2);
+  }
+  50% {
+    background-color: rgba(250,100,250,0.5);
+  }
+  75% {
+    background-color: rgba(250,150,250,0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 30px rgba(192,192,192,0.3);
+    background-color: rgba(250,200,250,0.5);
+  }
+}
+
+@keyframes spinBG {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes spinBG2 {
+  0% {
+    transform: rotate(3600deg);
+    box-shadow: 0px 0px 1px rgba(192,192,192,0.3);
+  }
+  50% {
+    transform: rotate(1800deg);
+    box-shadow: 0px 0px 20px rgba(192,192,192,0.3);
+  }
+  100% {
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 1px rgba(192,192,192,0.3);
+  }
+}
+
+@keyframes spinBG3 {
+  0% {
+    transform: rotate(1800deg);
+    box-shadow: 0px 0px 1px rgba(23, 246, 251, 0.1);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
